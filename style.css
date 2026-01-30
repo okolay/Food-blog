@@ -32,6 +32,10 @@ nav {
   padding: 1rem;
 }
 
+.top-nav a:hover {
+  color: blueviolet;
+}
+
 ul a {
   text-decoration: none;
   color: black;
@@ -56,4 +60,51 @@ ul a {
   margin-bottom: 1rem;
 }
 
+.nav-menu a:hover {
+  background-color: blueviolet;
+}
+
 /* Navigation end */
+
+/* Grid start */
+
+.recipes-grid {
+  width: 80vw;
+  margin: 2.2rem auto;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+
+  overflow: hidden;
+  gap: 1rem;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.menu-item {
+  height: 60%;
+  position: relative;
+  height: 300px;
+  box-shadow: 2px 2px #888888;
+}
+
+.menu-item p {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+/* Grid End */
