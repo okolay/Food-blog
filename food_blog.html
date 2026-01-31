@@ -3,20 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>Food Blog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav>
       <div class="header">
         <img src="pictures/logo.png" alt="recipe blog logo" id="logo" />
-        <div class="top-nav">
-          <ul>
-            <li><a href="#">Recipe of the month</a></li>
-            <li><a href="#">Recipes</a></li>
-            <li><a href="#">Search</a></li>
-          </ul>
-        </div>
+        <ul class="top-nav">
+          <li><a href="#">Recipe of the month</a></li>
+          <li><a href="#">Recipes</a></li>
+          <li>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+        </ul>
       </div>
 
       <ul class="nav-menu">
@@ -29,72 +36,98 @@
         <li><a href="#">Dinner</a></li>
       </ul>
     </nav>
-    <div class="recipes-grid">
-      <div class="menu-item">
-        <img
-          src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGl6emF8ZW58MHx8MHx8fDI%3D"
-          alt="Pizza"
-        />
-        <p>Pizza</p>
-      </div>
-      <div class="menu-item">
-        <img
-          src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YnVyZ2VyfGVufDB8fDB8fHwy"
-          alt="Hamburger"
-        />
-        <p>Hamburger</p>
-      </div>
+    <main>
+      <div class="recipes-grid">
+        <div class="menu-item">
+          <img
+            src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGl6emF8ZW58MHx8MHx8fDI%3D"
+            alt="Pizza"
+          />
+          <p>Pizza</p>
+        </div>
+        <div class="menu-item">
+          <img
+            src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YnVyZ2VyfGVufDB8fDB8fHwy"
+            alt="Hamburger"
+          />
+          <p>Hamburger</p>
+        </div>
 
-      <div class="menu-item">
-        <img
-          src="https://images.unsplash.com/photo-1620921575116-fb8902865f81?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dG9hc3R8ZW58MHx8MHx8fDI%3D"
-          alt="Toast"
-        />
-        <p>Toast</p>
+        <div class="menu-item">
+          <img
+            src="https://images.unsplash.com/photo-1620921575116-fb8902865f81?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dG9hc3R8ZW58MHx8MHx8fDI%3D"
+            alt="Toast"
+          />
+          <p>Toast</p>
+        </div>
+        <div class="menu-item">
+          <img
+            src="https://images.unsplash.com/photo-1712334562767-5d366d0c40d9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNhbG1vbnxlbnwwfHwwfHx8Mg%3D%3D"
+            alt="Salmon"
+          />
+          <p>Salmon</p>
+        </div>
+        <div class="menu-item">
+          <img
+            src="https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBhc3RhfGVufDB8fDB8fHwy"
+            alt="Pasta"
+          />
+          <p>Pasta</p>
+        </div>
+        <div class="menu-item">
+          <img
+            src="https://images.unsplash.com/photo-1625535790900-348aa309bc7e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGVnZyUyMHNhbGFkfGVufDB8fDB8fHwy"
+            alt="Egg Salad"
+          />
+          <p>Egg Salad</p>
+        </div>
+        <div class="menu-item">
+          <img
+            src="https://media.istockphoto.com/id/2130358907/photo/sea-bream-fish-dorado-with-tomato-cherries-and-lemon-slices-on-white-plate-top-view.webp?a=1&b=1&s=612x612&w=0&k=20&c=6lzhEwUnFPfp4xT3mBvtcASm6T46tA7BgDRdsbJ7aRI="
+            alt="Fish"
+          />
+          <p>Fish</p>
+        </div>
+        <div class="menu-item">
+          <img
+            src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZHxlbnwwfHwwfHx8Mg%3D%3D"
+            alt="Kebap"
+          />
+          <p>Kebap</p>
+        </div>
+        <div class="menu-item">
+          <img
+            src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBhbmNha2VzfGVufDB8fDB8fHwy"
+            alt="Pancakes"
+          />
+          <p>Pancakes</p>
+        </div>
       </div>
-      <div class="menu-item">
-        <img
-          src="https://images.unsplash.com/photo-1712334562767-5d366d0c40d9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNhbG1vbnxlbnwwfHwwfHx8Mg%3D%3D"
-          alt="Salmon"
-        />
-        <p>Salmon</p>
+    </main>
+    <footer>
+      <ul class="footer-menu">
+        <li><a href="#">About us</a></li>
+        <li>|</li>
+        <li><a href="#">Recipes</a></li>
+        <li>|</li>
+        <li><a href="#">FAQ</a></li>
+        <li>|</li>
+        <li>
+          <a href="https://codefactory.wien/en/contact-en/">Contact us</a>
+        </li>
+      </ul>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="https://www.linkedin.com/"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="https://github.com/"
+          ><i class="fa-brands fa-square-github"></i
+        ></a>
       </div>
-      <div class="menu-item">
-        <img
-          src="https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBhc3RhfGVufDB8fDB8fHwy"
-          alt="Pasta"
-        />
-        <p>Pasta</p>
-      </div>
-      <div class="menu-item">
-        <img
-          src="https://images.unsplash.com/photo-1625535790900-348aa309bc7e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGVnZyUyMHNhbGFkfGVufDB8fDB8fHwy"
-          alt="Egg Salad"
-        />
-        <p>Egg Salad</p>
-      </div>
-      <div class="menu-item">
-        <img
-          src="https://media.istockphoto.com/id/2130358907/photo/sea-bream-fish-dorado-with-tomato-cherries-and-lemon-slices-on-white-plate-top-view.webp?a=1&b=1&s=612x612&w=0&k=20&c=6lzhEwUnFPfp4xT3mBvtcASm6T46tA7BgDRdsbJ7aRI="
-          alt="Fish"
-        />
-        <p>Fish</p>
-      </div>
-      <div class="menu-item">
-        <img
-          src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZHxlbnwwfHwwfHx8Mg%3D%3D"
-          alt="Kebap"
-        />
-        <p>Kebap</p>
-      </div>
-      <div class="menu-item">
-        <img
-          src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBhbmNha2VzfGVufDB8fDB8fHwy"
-          alt="Pancakes"
-        />
-        <p>Pancakes</p>
-      </div>
-    </div>
-    <footer></footer>
+      <p><i class="fa-regular fa-copyright"></i> CodeFactory 2026</p>
+    </footer>
   </body>
 </html>
