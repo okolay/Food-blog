@@ -116,14 +116,17 @@ nav {
 /* Grid End */
 
 /* Recipe of the month page */
+.header-content {
+  width: 80vw;
+  height: auto;
+  margin: 2rem 1rem;
+}
 
 .recipe-month {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-content: center;
-  width: 80vw;
-  height: auto;
-  margin: 2rem 4rem;
+  min-width: 80vh;
 }
 
 .introduction-text {
@@ -146,9 +149,10 @@ nav {
 }
 
 .info-form {
-  width: 70vw;
+  width: 90vw;
   height: auto;
-  margin: 2rem 4rem;
+  margin-left: 4rem;
+  padding: 2rem 0;
   font-size: 1.2rem;
   line-height: 2rem;
 }
