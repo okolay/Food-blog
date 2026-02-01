@@ -116,6 +116,11 @@ nav {
 /* Grid End */
 
 /* Recipe of the month page */
+.recipe-month {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
 
 /* Recipe of the month end */
 
@@ -127,7 +132,7 @@ footer {
   font-weight: none;
 }
 
-p {
+footer p {
   text-align: center;
   padding: 1rem 0;
 }
