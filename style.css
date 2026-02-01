@@ -24,6 +24,7 @@ nav {
 .top-nav {
   padding: 1rem;
   display: flex;
+  align-content: center;
   column-gap: 1.5rem;
   list-style: none;
 }
@@ -82,7 +83,7 @@ nav {
   justify-content: center;
   align-content: center;
   grid-template-columns: repeat(3, 1fr);
-  overflow: hidden;
+  overflow: visible;
   gap: 1rem;
 }
 
@@ -116,17 +117,21 @@ nav {
 /* Grid End */
 
 /* Recipe of the month page */
-.header-content {
-  width: 80vw;
+li {
+  margin-left: 3rem;
+}
+
+.layout-intro {
+  width: 80%;
   height: auto;
-  margin: 2rem 1rem;
+  margin: 2rem auto;
 }
 
 .recipe-month {
   display: flex;
   justify-content: center;
   align-content: center;
-  min-width: 80vh;
+  margin-left: 2rem;
 }
 
 .introduction-text {
@@ -135,35 +140,73 @@ nav {
 }
 
 .introduction-text h1 {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 .introduction-text p {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-style: italic;
   padding: 2rem 0;
 }
+
+.intro-image {
+  width: 50%;
+}
+
 .intro-image img {
   width: 80%;
   height: auto;
 }
 
 .info-form {
-  width: 90vw;
+  width: 90%;
   height: auto;
-  margin-left: 4rem;
-  padding: 2rem 0;
-  font-size: 1.2rem;
-  line-height: 2rem;
+  margin: 0 2rem;
+  padding: 2rem 5rem;
+  font-size: 1.3rem;
+  line-height: 3rem;
 }
 
 .guest-list-form {
   background-color: aquamarine;
   border: 2px solid wheat;
+  font-size: 1.3rem;
+  font-weight: bold;
   padding: 0.4rem;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+#submit {
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bold;
+  padding: 0.2rem;
+}
+
+#submit:hover {
+  background-color: blueviolet;
+}
+
+#paragraph-image {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+@media (max-width: 1200px) {
+  .recipe-month {
+    flex-direction: column-reverse;
+  }
+  .layout-intro {
+    width: 100%;
+    margin-left: 4rem;
+  }
 }
 
 /* Recipe of the month end */
