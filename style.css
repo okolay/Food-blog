@@ -116,10 +116,50 @@ nav {
 /* Grid End */
 
 /* Recipe of the month page */
+
 .recipe-month {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-content: center;
+  width: 80vw;
+  height: auto;
+  margin: 2rem 4rem;
+}
+
+.introduction-text {
+  width: 50%;
+  height: auto;
+}
+
+.introduction-text h1 {
+  font-size: 5rem;
+}
+
+.introduction-text p {
+  font-size: 1.7rem;
+  font-style: italic;
+  padding: 2rem 0;
+}
+.intro-image img {
+  width: 80%;
+  height: auto;
+}
+
+.info-form {
+  width: 70vw;
+  height: auto;
+  margin: 2rem 4rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.guest-list-form {
+  background-color: aquamarine;
+  border: 2px solid wheat;
+  padding: 0.4rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 /* Recipe of the month end */
