@@ -21,23 +21,15 @@ nav {
   align-items: center;
 }
 
-.top-nav {
-  padding: 1rem;
-  display: flex;
-  align-content: center;
-  column-gap: 1.5rem;
-  list-style: none;
-}
-
-.top-nav a:hover {
-  color: blueviolet;
-}
-
 .top-nav a {
   text-decoration: none;
   color: black;
   font-weight: bold;
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
+  margin-right: 1rem;
+}
+.top-nav a:hover {
+  color: blueviolet;
 }
 
 #logo {
@@ -49,20 +41,22 @@ nav {
 
 .nav-menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
-  padding: 0.5rem;
-  border-bottom: 2px solid black;
+  padding-right: 0.5rem;
+  /* padding: 0.5rem; */
+  border-bottom: 2px solid rgb(12, 11, 11);
   border-top: 2px solid black;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
+  flex-wrap: wrap;
 }
 
 .nav-menu a {
   text-decoration: none;
   color: black;
   font-weight: bold;
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
 }
 
 .nav-menu a:hover {
@@ -77,13 +71,10 @@ nav {
   width: 90%;
   height: auto;
   max-width: 1200px;
-  margin: 1.2rem auto;
   padding: 1rem;
   display: grid;
-  justify-content: center;
-  align-content: center;
+  margin: 2rem auto;
   grid-template-columns: repeat(3, 1fr);
-  overflow: visible;
   gap: 1rem;
 }
 
@@ -102,16 +93,15 @@ nav {
 
 .menu-item p {
   position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 0;
+  left: 0;
   font-weight: bold;
   color: white;
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
-  height: 20%;
   text-align: center;
-  padding-top: 5%;
+  padding: 1.2rem 0;
+  font-size: 1.2rem;
 }
 
 /* Grid End */
@@ -217,6 +207,12 @@ footer {
   color: white;
   font-size: 1rem;
   font-weight: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
 }
 
 footer p {
@@ -224,22 +220,34 @@ footer p {
   padding: 1rem 0;
 }
 
-.footer-menu {
+/* .footer-menu {
   display: flex;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  gap: 5%;
+  gap: 1rem;
   list-style: none;
   padding: 1rem 0;
-  overflow: hidden;
 }
 
 .footer-menu a {
   text-decoration: none;
   color: white;
-}
+} */
 
+.footer_links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  /* padding: 1rem 0.3rem; */
+}
+.footer_links span {
+  margin-right: 0.5rem;
+}
+.footer_link {
+  color: white;
+  text-decoration: none;
+}
 .social-icons a {
   color: white;
   font-size: 1.2rem;
@@ -255,6 +263,12 @@ footer p {
 /* Media start */
 
 /* Mobile version */
+@media (max-width: 650px) {
+  .footer_links {
+    width: 90%;
+  }
+}
+
 @media (max-width: 480px) {
   .recipes-grid {
     grid-template-columns: 1fr;
